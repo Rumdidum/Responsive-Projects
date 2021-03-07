@@ -41,7 +41,10 @@ form {
   padding: 2.5rem 0.625rem;
   border-radius: 0.25rem;
 }
-
+.form-control {
+    display: block;
+    width: 100%;
+}
 /* Dieser Code schein mit CSS Flexbox gemacht zu sein. 
 Ich muss es mir wohl nochmal ansehen. */
 
@@ -54,8 +57,13 @@ Ich muss es mir wohl nochmal ansehen. */
 .text-center {
   text-align: center;
 }
+.upload-button {
+
+    width: 100%;
+    cursor: pointer;
+}
   .submit-button {
-/*     display: block; */
+    display: block;
     width: 100%;
     background: var(--color-green);
     cursor: pointer;
@@ -65,7 +73,7 @@ Ich muss es mir wohl nochmal ansehen. */
 .input-textarea {
   min-height: 220px;
   align-items: center;
-  width: 50%;
+  width: 100%;
   padding: 0.625rem;
   resize: vertical;
 }
