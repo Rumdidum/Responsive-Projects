@@ -1,14 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
 :root {
   --background-violett: rgb(83, 49, 90);
-  --background-bright: rgba(116, 95, 72, 0.4);
+  --background-bright: rgba(116, 95, 72, 0.9);
   --color-green: #37af65;
 }
 
+*::before {
+    box-sizing: border-box;
+}
+
 body {
-  background-color: var(--background-violett);
+  font-family: 'Poppins', sans-serif;
+  /* background-color: var(--background-violett); */
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.9;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image:
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .container {
-  width: 100%;
+  width: 70%;
   margin: 3.125rem auto 0 auto;
 }
 form {
@@ -34,4 +59,12 @@ Ich muss es mir wohl nochmal ansehen. */
     width: 100%;
     background: var(--color-green);
     cursor: pointer;
+}
+
+.input-textarea {
+  min-height: 220px;
+  align-items: center;
+  width: 50%;
+  padding: 0.625rem;
+  resize: vertical;
 }
